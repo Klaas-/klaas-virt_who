@@ -1,0 +1,5 @@
+fixtures:
+  repositories:
+    stdlib: "https://github.com/puppetlabs/puppetlabs-stdlib.git"
+  symlinks:
+    virt_who: "#{source_dir}"

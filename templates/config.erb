@@ -1,0 +1,22 @@
+[<%= @server %>]
+type=<%= @type %>
+server=<%= @server %>
+username=<%= @username %>
+<% if @password -%>
+password=<%= @password %>
+<% end -%>
+<% if @encrypted_password -%>
+encrypted_password=<%= @encrypted_password %>
+<% end -%>
+<% if @owner -%>
+owner=<%= @owner %>
+<% end -%>
+<% if @env -%>
+env=<%= @env %>
+<% end -%>
+<% if @hypervisor_id -%>
+hypervisor_id=<%= @hypervisor_id %>
+<% end -%>
+<% if @filter_host_parents -%>
+filter_host_parents=<%= @filter_host_parents.join(',') %>
+<% end -%>
