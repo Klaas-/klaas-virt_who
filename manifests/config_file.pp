@@ -14,7 +14,7 @@ define virt_who::config_file (
   $filter_host_parents,
   $server = $name,
 ) {
-  file { "/etc/virt-who.d/${server}" :
+  file { "/etc/virt-who.d/${server}.conf" :
     ensure  => present,
     owner   => 'root',
     group   => 'root',
